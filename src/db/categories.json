@@ -1,0 +1,74 @@
+[
+  {
+    "categoryName": "concrete",
+    "banner": "/images/banner-1.png",
+    "subCategories": [
+      {
+        "title": "concrete product 1"
+      },
+      {
+        "title": "concrete product 2"
+      },
+      {
+        "title": "concrete product 3"
+      },
+      {
+        "title": "services"
+      }
+    ]
+  },
+  {
+    "categoryName": "reinforced concrete constructions",
+    "banner": "/images/banner-2.png",
+    "subCategories": [
+      {
+        "title": "concrete product 1"
+      },
+      {
+        "title": "concrete product 2"
+      },
+      {
+        "title": "concrete product 3"
+      },
+      {
+        "title": "services"
+      }
+    ]
+  },
+  {
+    "categoryName": "railway constructions",
+    "banner": "/images/banner-3.png",
+    "subCategories": [
+      {
+        "title": "concrete product 1"
+      },
+      {
+        "title": "concrete product 2"
+      },
+      {
+        "title": "concrete product 3"
+      },
+      {
+        "title": "services"
+      }
+    ]
+  },
+  {
+    "categoryName": "all services",
+    "banner": "/images/banner-4.png",
+    "subCategories": [
+      {
+        "title": "concrete product 1"
+      },
+      {
+        "title": "concrete product 2"
+      },
+      {
+        "title": "concrete product 3"
+      },
+      {
+        "title": "services"
+      }
+    ]
+  }
+]
