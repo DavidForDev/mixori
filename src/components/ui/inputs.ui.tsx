@@ -12,15 +12,18 @@ export const PrimaryInput = ({
   darkMode = { status: false, initialColor: "" },
   ...props
 }: InputTypes) => {
+  const placeholderStyle =
+    darkMode.initialColor === "white"
+      ? "placeholder:text-white border-white"
+      : "placeholder:text-black border-black";
+
   return (
     <div
-      className={`${className} ${
-        darkMode.status ? "border-black" : darkMode.initialColor
-      } w-full px-4 py-3.5 rounded-sm border border-solid  flex items-center gap-2`}
+      className={`${className} ${placeholderStyle} w-full px-4 py-3.5 rounded-sm border border-solid  flex items-center gap-2`}
     >
       <input
         {...props}
-        className={`w-full outline-none bg-transparent text-sm placeholder:text-black`}
+        className={`w-full outline-none bg-transparent text-sm ${placeholderStyle}`}
       />
       {icon}
     </div>

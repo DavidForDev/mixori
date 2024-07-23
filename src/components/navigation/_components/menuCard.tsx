@@ -9,7 +9,7 @@ import { MenuCardTypes } from "../../../types/components.type";
 const MenuCard = ({ name, href = "", subMenu }: MenuCardTypes) => {
   return (
     <div className="relative group transition-all">
-      <Link to={href} className="flex items-center gap-2">
+      <Link to={href} className="flex items-center ">
         <li className="cursor-pointer group-hover:text-[#2680EB] text-sm first-letter:uppercase font-medium text-black transition-all duration-300">
           {name}
         </li>

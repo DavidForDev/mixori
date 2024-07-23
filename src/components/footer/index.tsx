@@ -6,7 +6,7 @@ const Footer = () => {
     <CollectLayout
       banner={{
         image: "/images/footer.png",
-        className: "md:!h-full !h-[200px]",
+        className: "!h-[350px]",
         bgColor: "bg-[#f5f5f5]",
       }}
       reverse={true}

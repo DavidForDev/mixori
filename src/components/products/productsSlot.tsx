@@ -26,12 +26,20 @@ const ProductsSlot = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 2,
-    nextArrow: <RightIcon />,
-    prevArrow: <LeftIcon />,
+    nextArrow: (
+      <div>
+        <RightIcon style={{ position: "absolute", bottom: "0" }} />
+      </div>
+    ),
+    prevArrow: (
+      <div>
+        <LeftIcon style={{ position: "absolute", bottom: "0", right: "0" }} />
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1024,
@@ -77,15 +85,16 @@ const ProductsSlot = () => {
         <ProductList
           className="!flex-row !px-0 !py-0 flex-wrap"
           data={getCategory?.subCategories}
+          dividerLine={true}
         />
         <Link to={`/products?category=${categoryQuery}`}>
           <p className="first-letter:uppercase text-[#2680EB]">view all</p>
         </Link>
       </div>
-      <div className="relative">
-        <Slider {...settings}>
+      <div className="">
+        <Slider {...settings} className="static">
           {ProductsDB.map((product, index) => (
-            <ProductCard key={product.id} data={product} className="ml-3" />
+            <ProductCard key={product.id} data={product} />
           ))}
         </Slider>
       </div>

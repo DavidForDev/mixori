@@ -30,11 +30,11 @@ const ProductDetailPage = () => {
     (x) => x.category === currentProduct?.category
   ).slice(0, 3);
 
-  UseNavColorMode("border-black");
+  UseNavColorMode("black");
 
   return (
-    <div className="w-full flex items-stretch h-full flex-col md:flex-row">
-      <div className="bg-[#F5F5F5] flex-1 pt-28 py-6 h-fit flex flex-col gap-7">
+    <div className="w-full flex flex-col md:flex-row">
+      <div className="bg-[#F5F5F5] flex-1 pt-28 py-6 flex flex-col gap-12">
         <div className="flex items-center gap-4 text-sm px-4 md:px-14 text-nowrap flex-wrap">
           <p>products</p>
           <CaretArrow width={18} height={18} className="-rotate-90" />
@@ -75,7 +75,7 @@ const ProductDetailPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 self-stretch pt-28 py-2 h-full flex-col gap-8 flex">
+      <div className="flex-1 pt-28 h-full flex-col gap-8 flex">
         <div className="flex h-full flex-col gap-5 px-4 md:px-14 flex-1">
           <h3 className="text-xl uppercase text-black font-bold">
             Same categorie products

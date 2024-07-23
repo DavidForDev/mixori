@@ -1,4 +1,5 @@
 // ================ Types =================== \\
+import OpacityDivs from "../components/gradient";
 import { CollectLayoutTypes } from "../types/layouts.type";
 
 const CollectLayout = ({
@@ -6,22 +7,24 @@ const CollectLayout = ({
   banner = {},
   reverse = false,
   className = "",
+  colorLine = "",
 }: CollectLayoutTypes) => {
   const { image = "", bgColor = "", className: bannerClassName = "" } = banner;
   const reverseStyle = reverse ? "md:flex-row-reverse" : "";
 
   return (
-    <div
-      className={`flex ${reverseStyle} ${className} relative items-stretch flex-col md:flex-row h-full`}
-    >
-      <div className="flex-1">
+    <div className={`flex items-stretch ${reverseStyle} flex-col md:flex-row`}>
+      <div className="flex-1 flex justify-center items-center bg-[#F5F5F5]">
         <div
-          className={`w-full h-svh ${bgColor} ${bannerClassName} bg-center`}
+          className={`w-full ${bgColor} ${bannerClassName} bg-center h-svh`}
           style={{ backgroundImage: `url(${image})` }}
         />
       </div>
-      <div className="flex-1 flex py-16  items-center justify-center h-svh self-stretch">
+      <div
+        className={`${className} ${colorLine ? "relative" : ""} flex-1 py-16`}
+      >
         {children}
+        <OpacityDivs color={colorLine} className="absolute left-0 bottom-0" />
       </div>
     </div>
   );

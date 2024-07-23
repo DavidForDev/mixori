@@ -12,14 +12,16 @@ const ProductGallery = ({ data, className = "" }: ProductGalleryTypes) => {
 
   return (
     <div
-      className={`${className} flex flex-col md:flex-row max-h-full items-stretch h-full gap-4`}
+      className={`${className} flex flex-col justify-start md:flex-row gap-4 w-full md:max-h-60 h-full`}
     >
-      <img
-        src={currentImage ? currentImage : data?.[0]}
-        alt="img"
-        className="h-full w-full max-w-full md:max-w-80 object-cover transition-all duration-300"
-      />
-      <div className="flex md:grid md:grid-cols-2 overflow-auto w-full md:w-fit self-stretch gap-4">
+      <div className="flex-[1_0_60%]">
+        <img
+          src={currentImage ? currentImage : data?.[0]}
+          alt="img"
+          className="w-full h-full object-cover transition-all duration-300"
+        />
+      </div>
+      <div className="flex-[0_1_auto] flex md:grid md:grid-cols-2 overflow-auto items-start w-full md:w-fit gap-4">
         {data?.map((el) => (
           <img
             src={el}
@@ -27,7 +29,7 @@ const ProductGallery = ({ data, className = "" }: ProductGalleryTypes) => {
             onClick={() => selectImageHandle(el)}
             className={`${
               el === currentImage ? "border-[#2680EB]" : ""
-            } max-h-28 max-w-28 w-full h-full object-cover cursor-pointer border border-solid hover:border-[#2680EB] transition-all duration-300`}
+            } w-full md:h-full h-28 object-cover cursor-pointer border border-solid hover:border-[#2680EB] transition-all duration-300`}
           />
         ))}
       </div>

@@ -9,6 +9,7 @@ export interface CollectLayoutTypes {
     className?: string;
   };
   reverse?: boolean;
+  colorLine?: string;
   className?: string;
 }
 

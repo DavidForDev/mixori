@@ -70,7 +70,7 @@ const ContactPage = () => {
 
   const contact = contactsBase.find((x) => x.content === contentQuery);
 
-  UseNavColorMode("border-black");
+  UseNavColorMode("black");
 
   return (
     <div className="flex items-stretch h-full overflow-hidden flex-col md:flex-row">

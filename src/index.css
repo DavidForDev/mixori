@@ -15,9 +15,23 @@
   background-color: black;
 }
 
+.slick-track > div {
+  padding-left: 6px;
+}
+
+.slick-dots li button:hover::before {
+  color: #2680eb !important;
+}
+.slick-dots li.slick-active:hover {
+  color: #2680eb !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2680eb !important;
+}
+
 .slick-track {
-  display: flex;
-  gap: 15px;
+  display: flow;
 }
 
 body,

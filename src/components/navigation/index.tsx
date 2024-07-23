@@ -18,19 +18,11 @@ import { useColorMode } from "../../store/components.store";
 // ================ Local Database =================== \\
 import menuBase from "../../db/menu.json";
 import Languages from "../languages";
+import UseNavColorMode from "../../hooks/useNavColorMode";
 
 const Navigation = () => {
   const [searchStatus, setSearchStatus] = useState<boolean>(false);
-  const [isSticky, setIsSticky] = useState<boolean>(false);
   const { color } = useColorMode();
-
-  // Handle scroll to toggle sticky state
-  const handleScroll = () => setIsSticky(window.scrollY > 0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // Open search
   const openSearch = () => setSearchStatus(true);
@@ -39,15 +31,13 @@ const Navigation = () => {
   const closeSearch = () => setSearchStatus(false);
 
   // Conditional styles
-  const scrollStyle = isSticky ? "bg-white px-5 py-2 rounded-md shadow-md" : "";
+  UseNavColorMode("border-white");
 
   // multi Language
 
   return (
-    <div className="w-full fixed left-0 top-0 px-10 py-3 z-50">
-      <nav
-        className={`flex items-center justify-between transition-all ${scrollStyle}`}
-      >
+    <div className="w-full absolute top-0 left-0 px-10 py-3 z-50">
+      <nav className="flex items-center justify-between transition-all">
         <div className="flex items-center gap-8">
           <LogoIcon width={115} />
           <ul className="flex items-center gap-8">
@@ -67,16 +57,18 @@ const Navigation = () => {
             placeholder="search"
             className="max-w-64 cursor-pointer"
             onClick={openSearch}
-            darkMode={{ status: isSticky, initialColor: color }}
+            darkMode={{ status: false, initialColor: color }}
             icon={
               <SearchIcon
                 width={22}
                 height={22}
-                className={`${isSticky ? "stroke-black" : ""} cursor-pointer`}
+                className={`stroke-white cursor-pointer ${
+                  color === "white" ? "stroke-white" : "stroke-black"
+                }`}
               />
             }
           />
-          <Languages darkMode={{ status: isSticky, initialColor: color }} />
+          <Languages darkMode={{ status: false, initialColor: color }} />
         </div>
       </nav>
       <SearchContainer openStatus={searchStatus} onClose={closeSearch} />

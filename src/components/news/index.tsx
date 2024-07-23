@@ -28,15 +28,17 @@ const News = ({ data }: NewsTypes) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: data.length,
           slidesToScroll: 1,
+          vertical: true,
+          verticalSwiping: true,
         },
       },
     ],
   };
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden px-4 md:px-0">
       <Slider {...settings}>
         {data.map((el) => (
           <NewsCard

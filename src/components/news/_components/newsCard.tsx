@@ -12,7 +12,7 @@ const NewsCard = ({
   year,
 }: NewsCardTypes) => {
   return (
-    <div className="border-r border-solid border-black/20 px-12 flex flex-col gap-5">
+    <div className="border-t py-6 md:py-0 md:!border-r md:!border-t-0 border-solid border-black/20 px-12 flex flex-col gap-5">
       <div className="w-full relative overflow-hidden group">
         <img
           src={image}

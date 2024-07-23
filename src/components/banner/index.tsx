@@ -15,28 +15,32 @@ export const PrimaryBanner = ({ image, className = "" }: BannerType) => {
 export const SecondaryBanner = () => {
   return (
     <div className="w-full bg-[#2680EB] px-10 grid grid-cols-1  md:grid-cols-4 relative max-h-fit py-10 gap-3 items-start">
-      <img src="/images/service-1.png" alt="banner" className="h-full " />
+      <img
+        src="/images/banners/banner-5.png"
+        alt="banner"
+        className="h-full "
+      />
 
       <div className="flex flex-col gap-12 self-end">
         <h3 className="text-white text-6xl text-center">Working process</h3>
         <img
-          src="/images/service-2.png"
+          src="/images/banners/banner-6.png"
           alt="banner"
           className="h-36 object-cover"
         />
       </div>
 
-      <img src="/images/bg.png" alt="banner" className="h-full" />
+      <img src="/images/banners/banner-7.png" alt="banner" className="h-full" />
 
       <div className="flex flex-col gap-3 ">
         <div className="flex gap-3 w-36">
           <img
-            src="/images/service-1.png"
+            src="/images/banners/banner-8.png"
             alt="banner"
             className="w-full flex-1"
           />
           <img
-            src="/images/service-2.png"
+            src="/images/banners/banner-9.png"
             alt="banner"
             className="w-full flex-1"
           />

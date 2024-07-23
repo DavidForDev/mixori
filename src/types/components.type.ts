@@ -59,6 +59,7 @@ export interface ProductListType {
   }[];
   className?: string;
   category?: string;
+  dividerLine?: boolean;
 }
 
 export interface ProductCardTypes {

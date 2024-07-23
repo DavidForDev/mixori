@@ -40,7 +40,7 @@ const ProductsPage = () => {
         );
 
   // navigation: search, language components intial color
-  UseNavColorMode("border-black");
+  UseNavColorMode("black");
 
   return (
     <div className="flex flex-col h-full pt-28 gap-24">

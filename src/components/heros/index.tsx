@@ -13,7 +13,10 @@ const HeroContainer = () => {
 
   return (
     <div className="flex items-start h-full flex-col md:flex-row">
-      <div className="w-full h-full flex-1 flex py-10 pt-28">
+      <div
+        className="w-full h-full flex-1 flex py-10 bg-cover pt-28"
+        style={{ background: "url('/images/bg-2.png')" }}
+      >
         <div className="flex h-full flex-col items-start justify-end gap-5 px-10">
           <h1 className="text-5xl md:text-[70px] leading-snug capitalize md:w-[530px] max-w-xl font-medium text-start">
             <span className="text-[#2680EB]">building a future</span> with our

@@ -26,7 +26,13 @@ const Products = ({
           no product yet
         </h3>
       )}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <div
+        className={`${
+          position === "horizontal"
+            ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+            : "flex flex-col"
+        }  gap-12`}
+      >
         {data?.map((product) => (
           <ProductCard key={product.id} data={product} />
         ))}

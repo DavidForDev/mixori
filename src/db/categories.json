@@ -1,7 +1,7 @@
 [
   {
     "categoryName": "concrete",
-    "banner": "/images/banner-1.png",
+    "banner": "/images/banners/banner-1.png",
     "subCategories": [
       {
         "title": "concrete product 1"
@@ -19,7 +19,7 @@
   },
   {
     "categoryName": "reinforced concrete constructions",
-    "banner": "/images/banner-2.png",
+    "banner": "/images/banners/banner-2.png",
     "subCategories": [
       {
         "title": "concrete product 1"
@@ -37,7 +37,7 @@
   },
   {
     "categoryName": "railway constructions",
-    "banner": "/images/banner-3.png",
+    "banner": "/images/banners/banner-3.png",
     "subCategories": [
       {
         "title": "concrete product 1"
@@ -55,7 +55,7 @@
   },
   {
     "categoryName": "all services",
-    "banner": "/images/banner-4.png",
+    "banner": "/images/banners/banner-4.png",
     "subCategories": [
       {
         "title": "concrete product 1"

@@ -8,7 +8,7 @@ import UseNavColorMode from "../../hooks/useNavColorMode";
 import NewsDB from "../../db/news.json";
 
 const NewsPage = () => {
-  UseNavColorMode("border-black");
+  UseNavColorMode("black");
 
   return (
     <div className="flex flex-col h-full pt-28 gap-24 py-28">

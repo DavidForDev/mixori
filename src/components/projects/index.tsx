@@ -15,6 +15,8 @@ const Projects = () => {
   const projects = [
     { id: "1", name: "Project 1", location: "Location 1", years: "Years 1" },
     { id: "2", name: "Project 2", location: "Location 2", years: "Years 2" },
+    { id: "3", name: "Project 3", location: "Location 3", years: "Years 4" },
+    { id: "4", name: "Project 4", location: "Location 4", years: "Years 3" },
   ];
 
   return (
@@ -42,6 +44,7 @@ const Projects = () => {
           onClick={handleToggle}
           id={el.id}
           isOpen={el.id === toggleStatus}
+          data={el}
         />
       ))}
     </div>

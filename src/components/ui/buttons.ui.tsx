@@ -52,17 +52,20 @@ export const SwitchButton = ({
   to = "",
   ...props
 }: ButtonTypes) => {
-  const darkStyle = darkMode.status ? "border-black" : darkMode.initialColor;
+  const darkStyle =
+    darkMode.initialColor === "white"
+      ? "border-white text-white hover:text-white"
+      : `border-black text-black hover:text-white`;
 
   const activeStyle = active
-    ? "!bg-[#2680EB] !border-[#2680EB] text-white"
+    ? "!bg-[#2680EB] !border-[#2680EB] text-white hover:text-white"
     : "";
 
   return (
     <Link to={to}>
       <button
         {...props}
-        className={`${className} ${darkStyle} ${activeStyle} duration-300 transition-all rounded-md border border-solid  hover:text-white hover:bg-[#2680EB] hover:border-[#2680EB] bg-transparent text-center p-3 first-letter:uppercase text-sm`}
+        className={`${className} flex items-center justify-center h-full ${darkStyle} ${activeStyle} duration-300 transition-all rounded-md border border-solid hover:bg-[#2680EB] hover:border-[#2680EB] bg-transparent text-center p-3 first-letter:uppercase text-sm`}
       >
         {children}
       </button>
