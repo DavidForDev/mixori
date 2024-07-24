@@ -1,3 +1,5 @@
+import React from "react";
+
 import Slider from "react-slick";
 import RightIcon from "../assets/icons/right";
 import LeftIcon from "../assets/icons/left";

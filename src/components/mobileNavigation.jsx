@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 // ================ Icons =================== \\
 import LogoIcon from "../assets/icons/logo";

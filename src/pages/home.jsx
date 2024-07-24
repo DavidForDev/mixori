@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Components =================== \\
 import HeroContainer from "../components/heros";
 import ProductsSlot from "../components/productsSlot";

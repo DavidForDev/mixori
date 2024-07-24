@@ -1,3 +1,5 @@
+import React from "react";
+
 export const PrimaryBanner = ({ image, className = "" }) => {
   return (
     <div className={`w-full ${className}`}>

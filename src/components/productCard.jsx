@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Icons =================== \\
 import CaretArrow from "../assets/icons/caretArrow";
 

@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Icons =================== \\
 import { Link, useSearchParams } from "react-router-dom";
 import FacebookIcon from "../assets/icons/facebook";

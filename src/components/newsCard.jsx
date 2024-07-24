@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Icons =================== \\
 import EyeIcon from "../assets/icons/eye.jsx";
 

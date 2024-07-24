@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Components =================== \\
 import { PrimaryBanner } from "../components/banner";
 import Partners from "../components/partners";

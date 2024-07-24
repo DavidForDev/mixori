@@ -1,3 +1,4 @@
+import React from "react";
 // ================ Local Components =================== \\
 import SocialCard from "./socialCard";
 

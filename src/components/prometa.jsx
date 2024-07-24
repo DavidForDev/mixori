@@ -1,3 +1,5 @@
+import React from "react";
+
 const ProMeta = ({ projectName, location, years, className }) => {
   return (
     <div

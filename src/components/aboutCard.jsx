@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Icons =================== \\
 import ArrowIcon from "../assets/icons/arrow";
 

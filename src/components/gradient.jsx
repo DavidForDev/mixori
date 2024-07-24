@@ -1,3 +1,5 @@
+import React from "react";
+
 const OpacityDivs = ({ color, className = "" }) => {
   const opacities = [1, 0.84, 0.68, 0.52, 0.36, 0.2];
 

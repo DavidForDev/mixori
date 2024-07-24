@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useResolvedPath } from "react-router-dom";
+import React from "react";
 
 // ================ Icons =================== \\
 import LogoIcon from "../assets/icons/logo";

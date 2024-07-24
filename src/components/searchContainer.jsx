@@ -1,3 +1,5 @@
+import React from "react";
+
 // --------------------- Icon --------------------- \\
 import CloseIcon from "../assets/icons/close";
 import { PrimaryButton } from "./ui/buttons.ui";

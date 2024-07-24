@@ -1,3 +1,5 @@
+import React from "react";
+
 // ----------------------- Layouts ------------------------- \\
 import SliderLayout from "../layouts/slider.layout";
 

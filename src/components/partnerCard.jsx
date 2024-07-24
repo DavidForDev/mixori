@@ -1,3 +1,5 @@
+import React from "react";
+
 const PartnerCard = ({ logo }) => {
   return (
     <div className="w-full p-12 cursor-pointer">

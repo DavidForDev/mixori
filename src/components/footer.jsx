@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Layouts =================== \\
 import CollectLayout from "../layouts/collect.layout";
 

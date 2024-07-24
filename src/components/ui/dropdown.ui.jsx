@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import CaretArrow from "../../assets/icons/caretArrow";
 
 const DropDown = ({ className = "" }) => {

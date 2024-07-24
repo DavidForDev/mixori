@@ -1,3 +1,5 @@
+import React from "react";
+
 import CaretArrow from "../assets/icons/caretArrow";
 
 const ProPath = () => {

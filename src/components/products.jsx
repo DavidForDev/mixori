@@ -1,3 +1,5 @@
+import React from "react";
+
 // ================ Local Components =================== \\
 import ProductCard from "./productCard";
 
