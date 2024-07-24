@@ -15,8 +15,8 @@
   background-color: black;
 }
 
-.slick-track > div {
-  padding-left: 6px;
+.invisible-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .slick-dots li button:hover::before {
