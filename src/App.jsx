@@ -3,21 +3,21 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 
 // ======================= Components ========================= \\
-import Navigation from "./components/navigation";
+import Navigation from "./components/desktopNavigation";
+import MobileNavigation from "./components/mobileNavigation";
 import Footer from "./components/footer";
 
 // ======================= Pages ========================= \\
-import HomePage from "./pages/home/index";
-import ProductsPage from "./pages/products/index";
-import ContactPage from "./pages/contact/index";
-import AboutPage from "./pages/about/index";
+import HomePage from "./pages/home";
+import ProductsPage from "./pages/products";
+import ContactPage from "./pages/contact";
+import AboutPage from "./pages/about";
 import PartnersPage from "./pages/partners";
 import NewsPage from "./pages/news";
-import CurrentProjectPage from "./pages/current-projects/index";
-import FinishedProjectsPage from "./pages/finished-projects";
-import ProductDetailPage from "./pages/products/_page/productDetail";
-import NewsDetailPage from "./pages/news/_pages/newsDetail";
-import MobileNavigation from "./components/navigation/mobile";
+import CurrentProjectPage from "./pages/currentProjects";
+import FinishedProjectsPage from "./pages/finishedProjects";
+import ProductDetailPage from "./pages/productDetail";
+import NewsDetailPage from "./pages/newsDetail";
 
 function App() {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 768px)" });
