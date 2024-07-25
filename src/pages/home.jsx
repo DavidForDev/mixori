@@ -22,14 +22,17 @@ const HomePage = () => {
       </SectionLayout>
       <SectionLayout>
         <CollectLayout
-          banner={{ image: "/images/collect/collect-1.png" }}
+          banner={{
+            image: "/images/collect/collect-1.png",
+            className: "h-svh",
+          }}
           colorLine="#ED9422"
         >
           <div className="md:px-10 px-4 flex items-center justify-center h-full">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col items-start gap-1 m-auto">
                 <p className="font-medium">Have something to discuss?</p>
-                <h1 className="text-5xl text-[#ED9422]">
+                <h1 className="text-5xl 2xl:text-7xl text-[#ED9422]">
                   We are always happy to discuss new challenges so feel free to
                 </h1>
               </div>
@@ -41,17 +44,23 @@ const HomePage = () => {
           </div>
         </CollectLayout>
         <CollectLayout
-          banner={{ image: "/images/service-1.png", className: "md:!h-full" }}
+          banner={{
+            image: "/images/service-1.png",
+            className: "md:h-full h-svh",
+          }}
           reverse={true}
         >
-          <div className="flex flex-col max-w-md m-auto md:px-10 px-4 w-full items-start justify-center h-full gap-12">
+          <div className="flex flex-col max-w-md 2xl:max-w-lg m-auto md:px-10 px-4 w-full items-start justify-center h-full gap-12">
             <ProSlider label="current projects" />
           </div>
         </CollectLayout>
         <CollectLayout
-          banner={{ image: "/images/service-2.png", className: "md:!h-full" }}
+          banner={{
+            image: "/images/service-2.png",
+            className: "md:h-full h-svh",
+          }}
         >
-          <div className="flex flex-col max-w-md m-auto md:px-10 px-4  w-full items-start justify-center h-full gap-12">
+          <div className="flex flex-col max-w-md 2xl:max-w-lg m-auto md:px-10 px-4  w-full items-start justify-center h-full gap-12">
             <ProSlider label="current projects" />
           </div>
         </CollectLayout>

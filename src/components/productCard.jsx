@@ -8,7 +8,7 @@ const ProductCard = ({ className = " ", data }) => {
 
   return (
     <div
-      className={`${className} mr-3 w-full rounded-sm group flex flex-col gap-3 cursor-pointer bg-white p-5 px-6 transition-all duration-300 border border-solid border-transparent hover:border-[#2680EB]`}
+      className={`${className} w-full rounded-sm group flex flex-col gap-3 cursor-pointer bg-white p-5 px-7 transition-all duration-300 border border-solid border-transparent hover:border-[#2680EB]`}
     >
       <div className="bg-[#2680EB]/30 rounded-full p-1 w-fit opacity-0 group-hover:opacity-100 transition-all duration-300">
         <CaretArrow

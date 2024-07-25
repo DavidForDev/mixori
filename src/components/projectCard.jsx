@@ -13,13 +13,13 @@ const ProjectCard = ({ id, isOpen, onClick, data }) => {
         <div
           className={`${
             isOpen ? "text-[#2680EB]" : ""
-          } gap-6 flex items-center justify-between text-nowrap max-w-3xl w-full`}
+          } gap-6 flex items-center justify-between text-nowrap max-w-5xl 2xl:max-w-7xl w-full`}
         >
-          <span className="first-letter:uppercase ">{data.name}</span>
-          <span className="first-letter:uppercase hidden md:block">
+          <span className="first-letter:uppercase w-1/3">{data.name}</span>
+          <span className="first-letter:uppercase hidden md:block w-1/3">
             {data.location}
           </span>
-          <span className="first-letter:uppercase hidden md:block">
+          <span className="first-letter:uppercase hidden md:block w-1/3">
             {data.years}
           </span>
         </div>
@@ -35,13 +35,13 @@ const ProjectCard = ({ id, isOpen, onClick, data }) => {
       <div
         className={`transition-max-height duration-500 overflow-auto invisible-scroll w-full flex-col flex gap-4 ${toggleStyle}`}
       >
-        <div className="flex gap-6 mt-4 w-fit max-h-60 md:max-h-full">
+        <div className="flex gap-6 mt-4 w-fit max-h-60 md:max-h-full max-w-5xl 2xl:max-w-7xl">
           <img
             src="/images/service-1.png"
             alt="project1"
-            className="w-full md:w-1/4 max-h-60 md:max-h-full"
+            className="w-full md:w-1/3 max-h-60 md:max-h-full"
           />
-          <p className="md:w-1/4 w-[600px] overflow-auto">
+          <p className="md:w-1/3 w-[600px] overflow-auto">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -55,7 +55,7 @@ const ProjectCard = ({ id, isOpen, onClick, data }) => {
           <img
             src="/images/service-1.png"
             alt="project3"
-            className="w-full md:w-1/4 max-h-60 md:max-h-full"
+            className="w-full md:w-1/3 max-h-60 md:max-h-full"
           />
         </div>
       </div>

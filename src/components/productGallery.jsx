@@ -10,7 +10,7 @@ const ProductGallery = ({ data, className = "" }) => {
 
   return (
     <div
-      className={`${className} flex flex-col justify-start md:flex-row gap-4 w-full md:max-h-60 h-full`}
+      className={`${className} flex flex-col justify-start md:flex-row gap-4 w-full md:max-h-60 2xl:max-h-96 h-full`}
     >
       <div className="flex-[1_0_60%]">
         <img

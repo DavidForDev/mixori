@@ -71,7 +71,7 @@ const ContactPage = () => {
 
   return (
     <div className="flex items-stretch h-full overflow-hidden flex-col md:flex-row">
-      <div className="bg-gradient-to-b self-stretch from-[#BFCDDA]/30 to-[#F1F5F8] py-12 h-svh md:h-auto px-16 md:flex-[0_0_30%] flex flex-col items-center justify-end md:gap-24 min-h-full">
+      <div className="bg-gradient-to-b self-stretch from-[#BFCDDA]/30 to-[#F1F5F8] py-12 h-svh md:h-auto px-28 2xl:px-36 md:flex-[0_0_30%] flex flex-col items-center justify-end md:gap-24 min-h-full">
         <img src="/images/contact.png" alt="contact_logo" className="mb-12" />
         <div className="flex flex-col items-center gap-16">
           <p className="text-sm leading-relaxed first-letter:uppercase">
@@ -97,7 +97,7 @@ const ContactPage = () => {
             ))}
           </ul>
         </header>
-        <main className="h-full flex flex-col gap-12 max-w-2xl m-auto py-12 md:px-10 px-4">
+        <main className="h-full flex flex-col gap-12 2xl:max-w-5xl max-w-2xl m-auto py-12 md:px-10 px-4">
           <div className="flex flex-col gap-6">
             <h2 className="text-[#2680EB] text-6xl first-letter:uppercase">
               get in touch with

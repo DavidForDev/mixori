@@ -15,6 +15,14 @@
   background-color: black;
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
 .invisible-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -28,10 +36,6 @@
 
 .slick-dots li.slick-active button:before {
   color: #2680eb !important;
-}
-
-.slick-track {
-  display: flow;
 }
 
 body,

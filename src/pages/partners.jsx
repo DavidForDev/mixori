@@ -50,7 +50,7 @@ const PartnersPage = () => {
   ];
   return (
     <div className="flex flex-col h-full pt-28 gap-24 py-28">
-      <SectionLayout className="flex flex-col gap-8 px-3 md:px-10">
+      <SectionLayout className="flex flex-col gap-8 px-3 md:px-10 w-full">
         <PrimaryBanner image="/images/banners/banner-10.png" className="h-48" />
         <div className="flex items-center flex-col gap-6">
           <h3 className="uppercase font-bold text-lg">partners</h3>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { Link, useSearchParams } from "react-router-dom";
 import Slider from "react-slick";
@@ -17,6 +17,8 @@ import ProductList from "./productList";
 import { mainCategory } from "../db/categories.js";
 
 const ProductsSlot = () => {
+  const sliderRef = useRef(null);
+
   // === get Query
   const [searchParams] = useSearchParams();
   const categoryQuery = searchParams.get("category");
@@ -25,14 +27,21 @@ const ProductsSlot = () => {
     (x) => x.categoryName === categoryQuery
   );
 
+  // === Arrows function
+  const nextArrowHandle = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const prewArrowHandle = () => {
+    sliderRef.current.slickPrev();
+  };
+
   const settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 2,
-    nextArrow: <RightIcon />,
-    prevArrow: <LeftIcon />,
     responsive: [
       {
         breakpoint: 1024,
@@ -136,12 +145,32 @@ const ProductsSlot = () => {
           view all
         </p>
       </div>
-      <div className="relative">
-        <Slider {...settings}>
+      <div className="relative flex flex-col gap-7 justify-end w-full">
+        <Slider
+          {...settings}
+          ref={(slider) => {
+            sliderRef.current = slider;
+          }}
+          dotsClass="slick-dots !-bottom-[46px]"
+        >
           {products.map((product, index) => (
             <ProductCard key={product.id} data={product} />
           ))}
         </Slider>
+        <div className="items-center gap-4 w-full justify-end hidden md:flex">
+          <LeftIcon
+            width={24}
+            height={24}
+            onClick={prewArrowHandle}
+            className="cursor-pointer"
+          />
+          <RightIcon
+            width={24}
+            height={24}
+            onClick={nextArrowHandle}
+            className="cursor-pointer"
+          />
+        </div>
       </div>
       <p className="first-letter:uppercase text-[#2680EB] cursor-pointer block md:hidden  text-center">
         view all

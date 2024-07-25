@@ -73,7 +73,7 @@ const Navigation = () => {
               <SearchIcon
                 width={22}
                 height={22}
-                className={`stroke-white cursor-pointer ${
+                className={`cursor-pointer ${
                   color === "white" ? "stroke-white" : "stroke-black"
                 }`}
               />

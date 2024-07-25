@@ -4,8 +4,8 @@ export const PrimaryBanner = ({ image, className = "" }) => {
   return (
     <div className={`w-full ${className}`}>
       <div
-        style={{ background: `url(${image})`, backgroundRepeat: "no-repeat" }}
-        className="w-full h-full bg-no-repeat bg-cover object-cover transition-all duration-500"
+        style={{ background: `url(${image})` }}
+        className="w-full h-full !bg-cover transition-all duration-500"
       />
     </div>
   );

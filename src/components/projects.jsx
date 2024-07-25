@@ -25,11 +25,11 @@ const Projects = () => {
       <h3 className="md:hidden text-2xl">current projects</h3>
       <div className=" w-full items-center justify-between hidden md:flex">
         <div
-          className={`gap-6 items-center justify-between text-nowrap max-w-3xl w-full text-sm flex`}
+          className={`gap-6 items-center justify-between text-nowrap max-w-5xl 2xl:max-w-7xl w-full text-sm flex`}
         >
-          <span className="first-letter:uppercase ">project name</span>
-          <span className="first-letter:uppercase">location</span>
-          <span className="first-letter:uppercase ">years</span>
+          <span className="first-letter:uppercase w-1/3">project name</span>
+          <span className="first-letter:uppercase w-1/3">location</span>
+          <span className="first-letter:uppercase w-1/3">years</span>
         </div>
         <div className="flex items-center gap-2 cursor-pointer text-nowrap">
           <CaretArrow
